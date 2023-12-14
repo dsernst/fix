@@ -1,0 +1,28 @@
+solver.io
+
+1. What problems are most on your mind?
+
+> Start listing out problems
+
+----
+
+For each problem:
+    > Who does it affect? Personal? Group (which if so?)
+
+Filling out each problem:
+    1. What possible solutions are there?
+    2. What is the problem?
+    3. How much of a problem is this?
+    4. 
+
+
+----
+
+Prioritizing individual problems:
+
+1. RankThings style: "If you could solve either Problem A OR B, which would you choose?"
+2. Estimating costs / time to solve...
+      > then can sort by highest ROI.
+
+
+
