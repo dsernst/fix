@@ -14,7 +14,7 @@ export const InsertInput = () => {
       onKeyDown={async (event) => {
         if (event.key === 'Enter') {
           const { data, error } = await supabase
-            .from('notes')
+            .from('problems')
             .insert([{ title: value }])
             .select()
           if (error) console.error(error)

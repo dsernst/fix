@@ -4,14 +4,15 @@ import { cookies } from 'next/headers'
 export const PreviousEntries = async () => {
   const cookieStore = cookies()
   const supabase = createClient(cookieStore)
-  const { data: notes } = await supabase.from('notes').select()
+  const { data: problems } = await supabase.from('problems').select()
 
-  if (!notes) return <p>No notes found</p>
+  if (!problems || !problems.length)
+    return <p className="opacity-30">No problems found.</p>
 
   return (
     <ol className="list-decimal">
-      {notes.map((note, index) => (
-        <li key={index}>{note.title}</li>
+      {problems.map(({ title }, index) => (
+        <li key={index}>{title}</li>
       ))}
     </ol>
   )
