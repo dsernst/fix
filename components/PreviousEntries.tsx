@@ -10,8 +10,8 @@ export const PreviousEntries = async () => {
 
   return (
     <ol className="list-decimal">
-      {notes.map((note) => (
-        <li>{note.title}</li>
+      {notes.map((note, index) => (
+        <li key={index}>{note.title}</li>
       ))}
     </ol>
   )
