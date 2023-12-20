@@ -1,6 +1,7 @@
 import { Logo } from '../components/Logo'
 import AuthButton from '../components/AuthButton'
 import Header from '@/components/Header'
+import { PreviousEntries } from '@/components/PreviousEntries'
 
 export default async function Index() {
   return (
@@ -16,6 +17,7 @@ export default async function Index() {
         <Header />
         <main className="flex flex-col flex-1 gap-6">
           <h2 className="mb-4 text-3xl font-bold">Previous Entries:</h2>
+          <PreviousEntries />
         </main>
       </div>
 

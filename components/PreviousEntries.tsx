@@ -1,10 +1,18 @@
 import { createClient } from '@/utils/supabase/server'
 import { cookies } from 'next/headers'
 
-export default async function Page() {
+export const PreviousEntries = async () => {
   const cookieStore = cookies()
   const supabase = createClient(cookieStore)
   const { data: notes } = await supabase.from('notes').select()
 
-  return <pre>{JSON.stringify(notes, null, 2)}</pre>
+  if (!notes) return <p>No notes found</p>
+
+  return (
+    <ol className="list-decimal">
+      {notes.map((note) => (
+        <li>{note.title}</li>
+      ))}
+    </ol>
+  )
 }
