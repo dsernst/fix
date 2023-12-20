@@ -1,4 +1,5 @@
 import { InsertInput } from './InsertInput'
+import { OnePxDivider } from './ui/OnePxDivider'
 
 export default function Header() {
   return (
@@ -9,8 +10,7 @@ export default function Header() {
 
       <InsertInput />
 
-      {/* 1px divider */}
-      <div className="w-full p-[1px] bg-gradient-to-r from-transparent via-foreground/10 to-transparent my-8" />
+      <OnePxDivider />
     </div>
   )
 }
