@@ -1,8 +1,4 @@
-// Run this script to create a new issue.
-
-// Title?
-
-// create file: /issues/${title}.md
+// used by `npm run new` script
 
 export const newTemplate = `# {Title}
 

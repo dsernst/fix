@@ -1,3 +1,5 @@
+// `npm run new [issue title]` to run this script
+
 import { argv } from 'process'
 import fs from 'fs'
 import { newTemplate } from './template'
