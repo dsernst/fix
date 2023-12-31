@@ -1,0 +1,17 @@
+One goal of this project is to make "Problem Pages" version controlled.
+
+Ideally, people could relate to problem pages in a similar way to git and github.
+
+So one possible way to achieve that is by defining problem pages as plain text files, checked into git.
+
+This is somewhat similar to how github wiki's are also backed by a git repo under the hood.
+
+One interesting dynamic about this is that it would mean reading and editing the underlying file format would be incredibly easy and straight forward.
+
+The "App" itself is more of a templating engine, that makes it easy to create these specialized documents.
+
+We would still probably want specialized client software built to author and browse these plaintext documents more seamlessly.
+
+But we would get all the git version control out-of-the-box.
+
+
